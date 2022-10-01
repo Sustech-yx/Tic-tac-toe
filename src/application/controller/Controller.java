@@ -1,6 +1,5 @@
 package application.controller;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
@@ -44,19 +43,13 @@ public class Controller implements Initializable {
     private boolean refreshBoard (int x, int y) {
         if (chessBoard[x][y] == EMPTY) {
             chessBoard[x][y] = TURN ? PLAY_1 : PLAY_2;
-            try {
-                drawChess();
-            } catch (InvalidArgumentException e) {
-                System.err.println("Invalid value!");
-                // This is just an example.
-            }
-
+            drawChess();
             return true;
         }
         return false;
     }
 
-    private void drawChess () throws InvalidArgumentException {
+    private void drawChess () {
         for (int i = 0; i < chessBoard.length; i++) {
             for (int j = 0; j < chessBoard[0].length; j++) {
                 if (flag[i][j]) {
@@ -74,9 +67,7 @@ public class Controller implements Initializable {
                         // do nothing
                         break;
                     default:
-                        throw new InvalidArgumentException(new String[]{
-                                // This is just an example
-                        });
+                        System.err.println("Invalid value!");
                 }
             }
         }
