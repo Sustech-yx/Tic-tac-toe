@@ -33,10 +33,10 @@ This is a demo view for the assignment. However, the basic functions are not com
 ## TODO
 
 - [ ] Server (35pt.)
-- [ ] Client/Player (30pt.)
-- [x] GUI (20pt.)
+- [ ] Client/Player (35pt.)
+- [x] GUI (15pt.)
 - [ ] Exception Handling (15pt.)
-- [ ] Bonus (10pt.)
+- [ ] Bonus (15pt.)
 
 ## Hint
 
