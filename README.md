@@ -24,6 +24,10 @@ The java version for reference. If you want to use another java language level, 
 
 ![image-20220930145108089](README.assets/image-20220930145108089.png)
 
+You can use `System.out.println(com.sun.javafx.runtime.VersionInfo.getRuntimeVersion());` to check the version of `javafx`. The following screen-shot is the version of my machine.
+
+![image-20221026155813168](README.assets/image-20221026155813168.png)
+
 ## Demo View
 
 This is a demo view for the assignment. However, the basic functions are not complete yet. You should do it by yourself!
