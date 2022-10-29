@@ -8,6 +8,18 @@ This is a template for CS209A-22fall, assignment 2.
 
 Enter the [github repository ](https://github.com/Sustech-yx/Tic-tac-toe)and [fork](https://github.com/Sustech-yx/Tic-tac-toe/fork) the repo. Clone the repo to your local machine.
 
+### Configure
+
+After fork and clone the repository into your local machine, if you run it immediately, you will meet `IllegalStateException`. It is because `javaFX` cannot find the correct position of the resource file. With IntelliJ IDEA, you can Right click the resources dict and mark it as *resources*. 
+
+![image-20221029213444154](README.assets/image-20221029213444154.png)
+
+If the result seems like this, it means that you do the right thing.
+
+![image-20221029213844851](README.assets/image-20221029213844851.png)
+
+If you are using eclipse, you need to right-click Project>new>source folder, manually fill in the path of the resources directory, and then confirm.
+
 ### Start the game
 
 The main function entry: `src/application/Main.java`.
